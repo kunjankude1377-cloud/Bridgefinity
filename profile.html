@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile | Bridgefinity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-shell">
+            <div class="logo"><span class="logo-mark" aria-hidden="true">∞</span><span class="logo-name">Bridge<span>finity</span></span></div>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="events.html">Opportunities</a>
+                <a href="index.html#for-ngos">For NGOs</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="nav-buttons">
+                    <div class="nav-auth-area" data-auth-area>
+                        <a href="#login" class="login-btn" data-login-open>Login</a>
+                        <div class="nav-user-menu" data-user-menu>
+                            <button type="button" class="login-btn nav-user-trigger" data-user-trigger>Hi, <span data-user-name>Volunteer</span> ▼</button>
+                            <div class="profile-menu" aria-label="Volunteer account menu">
+                                <a href="profile.html">My Profile</a>
+                                <a href="profile.html#activity">My Activity</a>
+                                <button type="button" class="menu-logout" data-logout>Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="events.html" class="join-btn">Join Us</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="profile-page">
+        <section class="profile-hero">
+            <div>
+                <p class="small-heading">VOLUNTEER DASHBOARD</p>
+                <h1>Welcome to Bridgefinity, <span data-profile-name>Volunteer</span>!</h1>
+                <p class="profile-intro">Find opportunities that fit your interests, location and availability.</p>
+            </div>
+            <button type="button" class="primary-btn profile-edit-btn" data-profile-edit>Edit Profile</button>
+        </section>
+
+        <section class="profile-grid">
+            <div class="profile-stack">
+                <article class="profile-card" id="profile">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">YOUR PROFILE</p>
+                            <h2>Basic details</h2>
+                        </div>
+                    </div>
+
+                    <div class="profile-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Full Name</span>
+                            <strong data-profile-name-detail>Volunteer</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Email</span>
+                            <strong data-profile-email>volunteer@example.com</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">City / Location</span>
+                            <strong data-profile-location>Nagpur, Maharashtra</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Areas of Interest</span>
+                            <div class="interest-chips" data-profile-interests>
+                                <span>Environment</span>
+                                <span>Education</span>
+                                <span>Community</span>
+                            </div>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Skills / Interests</span>
+                            <strong data-profile-skills>Event support, teaching assistance, community outreach</strong>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Availability</span>
+                            <strong data-profile-availability>Weekends · 9:00 AM - 1:00 PM</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="profile-card" id="activity">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">YOUR ACTIVITY</p>
+                            <h2>My Activity</h2>
+                        </div>
+                    </div>
+
+                    <div class="activity-grid">
+                        <div class="mini-stat">
+                            <span class="stat-label">Saved Opportunities</span>
+                            <ul data-activity-saved>
+                                <li>Community Tree Plantation Drive</li>
+                                <li>Neighbourhood Clean-up Drive</li>
+                            </ul>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-label">Registered Opportunities</span>
+                            <ul data-activity-registered>
+                                <li>Teaching Support</li>
+                                <li>Volunteer Orientation</li>
+                            </ul>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-label">Upcoming Volunteering</span>
+                            <ul data-activity-upcoming>
+                                <li>Plantation Drive · Sat, 20 Sep</li>
+                                <li>Reading Circle · Sun, 25 Sep</li>
+                            </ul>
+                        </div>
+                        <div class="mini-stat">
+                            <span class="stat-label">Past Volunteering</span>
+                            <ul data-activity-past>
+                                <li>School Supply Drive</li>
+                                <li>Riverside Cleanup</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="profile-stack right-stack">
+                <article class="profile-card preferences-card">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">YOUR PREFERENCES</p>
+                            <h2>My Preferences</h2>
+                        </div>
+                    </div>
+
+                    <div class="preferences-list">
+                        <div class="preference-item">
+                            <span>Preferred location</span>
+                            <strong data-preference-location>Nagpur, Wardha Road</strong>
+                        </div>
+                        <div class="preference-item">
+                            <span>Preferred cause/category</span>
+                            <strong data-preference-cause>Environment and Education</strong>
+                        </div>
+                        <div class="preference-item">
+                            <span>Preferred days</span>
+                            <strong data-preference-days>Saturday, Sunday</strong>
+                        </div>
+                        <div class="preference-item">
+                            <span>Preferred time</span>
+                            <strong data-preference-time>Morning</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="profile-card profile-form-card" id="edit-profile">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">EDIT PROFILE</p>
+                            <h2>Update your details</h2>
+                        </div>
+                    </div>
+
+                    <form class="profile-form" id="profileForm">
+                        <div class="profile-form-grid">
+                            <label>
+                                <span>Full Name</span>
+                                <input type="text" name="name" value="Aanya Sharma" required>
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="email" value="aanya@example.com" required>
+                            </label>
+                            <label>
+                                <span>City / Location</span>
+                                <input type="text" name="location" value="Nagpur, Maharashtra" required>
+                            </label>
+                            <label>
+                                <span>Areas of Interest</span>
+                                <input type="text" name="interests" value="Environment, Education, Community" required>
+                            </label>
+                            <label class="full-width">
+                                <span>Skills / Interests</span>
+                                <textarea name="skills" rows="3" required>Event support, teaching assistance, community outreach</textarea>
+                            </label>
+                            <label class="full-width">
+                                <span>Availability</span>
+                                <input type="text" name="availability" value="Weekends · 9:00 AM - 1:00 PM" required>
+                            </label>
+                            <label>
+                                <span>Preferred location</span>
+                                <input type="text" name="prefLocation" value="Nagpur, Wardha Road" required>
+                            </label>
+                            <label>
+                                <span>Preferred cause</span>
+                                <input type="text" name="prefCause" value="Environment and Education" required>
+                            </label>
+                            <label>
+                                <span>Preferred days</span>
+                                <input type="text" name="prefDays" value="Saturday, Sunday" required>
+                            </label>
+                            <label>
+                                <span>Preferred time</span>
+                                <input type="text" name="prefTime" value="Morning" required>
+                            </label>
+                        </div>
+                        <button type="submit" class="primary-btn form-submit">Save Changes</button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="login-overlay" id="login" aria-hidden="true">
+        <div class="login-panel" role="dialog" aria-modal="true" aria-labelledby="login-title">
+            <button class="login-close" type="button" aria-label="Close login" data-login-close>×</button>
+            <p class="small-heading">WELCOME BACK</p>
+            <h2 id="login-title">Pick up where<br><span>you left off.</span></h2>
+            <p class="login-intro">Sign in to save opportunities and keep your impact story moving.</p>
+            <form class="login-form" id="loginForm">
+                <label for="loginEmail">Email address</label>
+                <input id="loginEmail" type="email" placeholder="you@example.com" autocomplete="email" required>
+                <label for="loginPassword">Password</label>
+                <input id="loginPassword" type="password" placeholder="Enter your password" autocomplete="current-password" required>
+                <button class="primary-btn login-submit" type="submit">Sign in <span>→</span></button>
+            </form>
+            <p class="login-note"></p>
+        </div>
+    </div>
+
+    <footer><div class="footer-logo">Bridge<span>finity</span></div><p>Connecting people. Creating impact.</p><p class="copyright">© 2026 Bridgefinity.</p></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

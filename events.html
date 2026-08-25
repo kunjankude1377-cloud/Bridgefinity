@@ -10,30 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260825">
 </head>
 
 <body>
 
-    <!-- Navigation -->
     <header class="navbar">
-
-        <div class="logo">
-            Bridge<span>finity</span>
+        <div class="nav-shell">
+            <div class="logo"><span class="logo-mark" aria-hidden="true">∞</span><span class="logo-name">Bridge<span>finity</span></span></div>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="index.html#how-it-works">How It Works</a>
+                <a href="events.html" class="active">Opportunities</a>
+                <a href="index.html#for-ngos">For NGOs</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="nav-buttons">
+                    <div class="nav-auth-area" data-auth-area>
+                        <a href="index.html#login" class="login-btn" data-login-open>Login</a>
+                        <div class="nav-user-menu" data-user-menu>
+                            <button type="button" class="login-btn nav-user-trigger" data-user-trigger>Hi, <span data-user-name>Volunteer</span> ▼</button>
+                            <div class="profile-menu" aria-label="Volunteer account menu">
+                                <a href="profile.html">My Profile</a>
+                                <a href="profile.html#activity">My Activity</a>
+                                <button type="button" class="menu-logout" data-logout>Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="register.html" class="join-btn">Join Us</a>
+                </div>
+            </div>
         </div>
-
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="index.html#how-it-works">How It Works</a>
-            <a href="events.html" class="active">Opportunities</a>
-            <a href="index.html#about">About</a>
-        </nav>
-
-        <div class="nav-buttons">
-            <a href="index.html#login" class="login-btn">Login</a>
-            <a href="#" class="join-btn">Join Us</a>
-        </div>
-
     </header>
 
 
@@ -112,9 +119,9 @@
 
             </div>
 
-            <a href="#" class="event-view-btn">
+            <button type="button" class="event-view-btn" data-event-details>
                 View Details →
-            </a>
+            </button>
 
         </article>
 
@@ -149,9 +156,9 @@
 
             </div>
 
-            <a href="#" class="event-view-btn">
+            <button type="button" class="event-view-btn" data-event-details>
                 View Details →
-            </a>
+            </button>
 
         </article>
 
@@ -186,9 +193,9 @@
 
             </div>
 
-            <a href="#" class="event-view-btn">
+            <button type="button" class="event-view-btn" data-event-details>
                 View Details →
-            </a>
+            </button>
 
         </article>
 
@@ -223,13 +230,24 @@
 
             </div>
 
-            <a href="#" class="event-view-btn">
+            <button type="button" class="event-view-btn" data-event-details>
                 View Details →
-            </a>
+            </button>
 
         </article>
 
     </main>
+
+    <div class="event-modal" id="eventModal" aria-hidden="true">
+        <div class="event-modal-panel" role="dialog" aria-modal="true" aria-labelledby="eventModalTitle">
+            <button class="login-close event-modal-close" type="button" aria-label="Close opportunity details" data-event-close>×</button>
+            <p class="small-heading" id="eventModalType">VOLUNTEER OPPORTUNITY</p>
+            <h2 id="eventModalTitle">Opportunity details</h2>
+            <p class="event-modal-description" id="eventModalDescription"></p>
+            <div class="event-modal-info" id="eventModalInfo"></div>
+            <a class="primary-btn event-modal-action" href="register.html">Register as a Volunteer →</a>
+        </div>
+    </div>
 
 
     <!-- Footer -->
@@ -244,13 +262,13 @@
         </p>
 
         <p class="copyright">
-            © 2026 Bridgefinity. College Project Prototype.
+            © 2026 Bridgefinity.
         </p>
 
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="script.js?v=20260825"></script>
 
 </body>
 </html>

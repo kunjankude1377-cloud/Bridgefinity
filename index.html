@@ -7,20 +7,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260825">
 </head>
 <body>
     <header class="navbar">
-        <div class="logo"><span class="logo-mark" aria-hidden="true">∞</span><span class="logo-name">Bridge<span>finity</span></span></div>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="#how-it-works">How It Works</a>
-            <a href="events.html">Opportunities</a>
-            <a href="#for-ngos">For NGOs</a>
-        </nav>
-        <div class="nav-buttons">
-            <a href="#login" class="login-btn" data-login-open>Login</a>
-            <a href="events.html" class="join-btn">Join Us</a>
+        <div class="nav-shell">
+            <div class="logo"><span class="logo-mark" aria-hidden="true">∞</span><span class="logo-name">Bridge<span>finity</span></span></div>
+            <nav aria-label="Main navigation">
+                <a href="index.html" class="active">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="events.html">Opportunities</a>
+                <a href="#for-ngos">For NGOs</a>
+            </nav>
+            <div class="nav-actions">
+                <div class="nav-buttons">
+                    <div class="nav-auth-area" data-auth-area>
+                        <a href="#login" class="login-btn" data-login-open>Login</a>
+                        <div class="nav-user-menu" data-user-menu>
+                            <button type="button" class="login-btn nav-user-trigger" data-user-trigger>Hi, <span data-user-name>Volunteer</span> ▼</button>
+                            <div class="profile-menu" aria-label="Volunteer account menu">
+                                <a href="profile.html">My Profile</a>
+                                <a href="profile.html#activity">My Activity</a>
+                                <button type="button" class="menu-logout" data-logout>Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="register.html" class="join-btn">Join Us</a>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -59,18 +73,81 @@
         </section>
 
         <section class="opportunities" id="opportunities">
-            <div class="section-heading"><p class="small-heading">SAMPLE OPPORTUNITIES</p><h2>Find a cause worth <span>showing up for.</span></h2><p>Demo listings shown for this prototype. Real opportunities will be verified before publishing.</p></div>
+            <div class="section-heading"><p class="small-heading">OPPORTUNITIES NEAR YOU</p><h2>Find a cause worth <span>showing up for.</span></h2><p>Discover meaningful volunteer opportunities across Nagpur and find one that fits your interests, skills and schedule.</p></div>
             <div class="opportunity-container">
-                <article class="opportunity-card"><div class="event-icon">🌱</div><div class="event-content"><p class="event-type">ENVIRONMENT</p><h3>Community Plantation Drive</h3><p>Help Green Nagpur restore a public garden with native trees and plants.</p><div class="event-info"><span>📍 Seminary Hills</span><span>📅 20 Sept · 7:00 AM</span><span>👥 12 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
-                <article class="opportunity-card"><div class="event-icon">📚</div><div class="event-content"><p class="event-type">EDUCATION</p><h3>Weekend Teaching Support</h3><p>Help local students with creative learning activities and homework support.</p><div class="event-info"><span>📍 Sitabuldi</span><span>📅 25 Sept · 10:00 AM</span><span>👥 6 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
-                <article class="opportunity-card"><div class="event-icon">♻️</div><div class="event-content"><p class="event-type">COMMUNITY</p><h3>Clean Community Initiative</h3><p>Join Clean City Collective for a hands-on neighbourhood clean-up morning.</p><div class="event-info"><span>📍 Dharampeth</span><span>📅 28 Sept · 8:00 AM</span><span>👥 18 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
+                <article class="opportunity-card"><div class="event-icon">🌱</div><div class="event-content"><p class="event-type">Environment & Sustainability</p><h3>Community Tree Plantation Drive</h3><p>Join a local NGO team to plant and care for native trees in a community space.</p><div class="event-info"><span>📍 Seminary Hills</span><span>📅 20 Sept · 7:00 AM</span><span>👥 12 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
+                <article class="opportunity-card"><div class="event-icon">📚</div><div class="event-content"><p class="event-type">Education & Learning</p><h3>Weekend LearningSupport</h3><p>Support local students through creative learning and basic academic activities.</p><div class="event-info"><span>📍 Sitabuldi</span><span>📅 25 Sept · 10:00 AM</span><span>👥 6 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
+                <article class="opportunity-card"><div class="event-icon">♻️</div><div class="event-content"><p class="event-type">Community & Civic Action</p><h3>Neighbourhood Clean-up Drive</h3><p>Work with a community group to improve cleanliness in a local neighbourhood.</p><div class="event-info"><span>📍 Dharampeth</span><span>📅 28 Sept · 8:00 AM</span><span>👥 18 slots left</span></div></div><a href="events.html" class="view-btn">View Opportunity →</a></article>
             </div>
+        </section>
+
+        <section class="research-section" id="research">
+            <div class="section-heading research-heading">
+                <p class="small-heading">OUR RESEARCH</p>
+                <h2>Built around what local organisations actually need.</h2>
+                <p>We spoke with local community organisations to understand how volunteers discover opportunities, what makes participation difficult, and what NGOs need from a volunteer platform.</p>
+            </div>
+
+            <div class="research-subheading">Organisations we consulted</div>
+
+            <div class="research-grid">
+                <article class="research-card">
+                    <div class="research-logo" aria-label="Vrikshit Nagpur research reference logo">VN</div>
+                    <div class="research-card-body">
+                        <h3>Vrikshit Nagpur</h3>
+                        <p class="research-area">Area of work: Community environment and local action</p>
+                        <p class="research-summary">Placeholder summary: We discussed how volunteers discover local opportunities, what keeps people from joining, and how organisations need clearer communication before events.</p>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-logo research-logo-alt" aria-label="Research organisation two logo placeholder">NGO</div>
+                    <div class="research-card-body">
+                        <h3>Love And Care</h3>
+                        <p class="research-area">Area of work: Health and Social Care</p>
+                        <p class="research-summary">Placeholder summary: Support community health and social care initiatives by assisting with outreach, awareness activities, and community support programs.</p>
+                    </div>
+                </article>
+
+                <article class="research-card">
+                    <div class="research-logo research-logo-alt-two" aria-label="Research organisation three logo placeholder">NGO</div>
+                    <div class="research-card-body">
+                        <h3>Nagpur United</h3>
+                        <p class="research-area">Area of work: Charity and Donation Drives </p>
+                        <p class="research-summary">Placeholder summary: Support charitable initiatives by helping organise donation drives, collect essential supplies, and distribute resources to communities in need.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="research-findings">
+                <h3>What we learned</h3>
+                <div class="research-findings-grid">
+                    <div class="finding-card">
+                        <h4>Discoverability</h4>
+                        <p>Volunteers often struggle to find suitable local opportunities.</p>
+                    </div>
+                    <div class="finding-card">
+                        <h4>Coordination</h4>
+                        <p>NGOs need an easier way to communicate opportunities and manage participation.</p>
+                    </div>
+                    <div class="finding-card">
+                        <h4>Volunteer fit</h4>
+                        <p>Location, schedule and type of activity matter when volunteers choose an opportunity.</p>
+                    </div>
+                    <div class="finding-card">
+                        <h4>Trust & clarity</h4>
+                        <p>Volunteers need clear information about the organisation, activity and expectations before participating.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="research-closing">These conversations helped shape the features and direction of Bridgefinity.</p>
         </section>
 
         <section class="first-time" id="first-time">
             <div class="first-time-intro">
                 <p class="small-heading">NEW TO VOLUNTEERING?</p>
-                <h2>Start with a little <span>confidence.</span></h2>
+                <h2>Connect Contribute And <span> Create Impact.</span></h2>
                 <p>You do not need experience to make a useful contribution. Here is what to expect before you take your first step.</p>
                 <a href="#opportunities" class="first-time-link">Browse beginner-friendly opportunities <span>→</span></a>
             </div>
@@ -96,6 +173,7 @@
     <div class="login-overlay ngo-overlay" id="ngo-registration" aria-hidden="true"><div class="login-panel ngo-panel" role="dialog" aria-modal="true" aria-labelledby="ngo-title"><button class="login-close" type="button" aria-label="Close NGO registration" data-ngo-close>×</button><p class="small-heading">PARTNER WITH US</p><h2 id="ngo-title">Build your volunteer <span>community.</span></h2><p class="login-intro">Create your NGO profile and start organising meaningful opportunities.</p><form class="login-form" id="ngoForm"><label for="ngoName">NGO Name</label><input id="ngoName" type="text" placeholder="Your organisation name" required><label for="ngoEmail">Email</label><input id="ngoEmail" type="email" placeholder="hello@yourngo.org" required><div class="ngo-form-grid"><div><label for="ngoPhone">Phone Number</label><input id="ngoPhone" type="tel" placeholder="+91 98765 43210" required></div><div><label for="ngoLocation">Location</label><input id="ngoLocation" type="text" placeholder="Nagpur" required></div></div><label for="ngoArea">Area of work</label><select id="ngoArea" required><option value="" selected disabled>Select an area</option><option>Education</option><option>Environment</option><option>Community</option><option>Healthcare</option></select><label for="ngoPassword">Password</label><input id="ngoPassword" type="password" placeholder="Create a password" minlength="6" required><button class="primary-btn login-submit" type="submit">Register NGO <span>→</span></button></form><div class="ngo-success" id="ngoSuccess" role="status"><strong> NGO registration successful!</strong><p>Your NGO profile is ready to create volunteer opportunities.</p><button class="secondary-btn" type="button" data-ngo-done>Continue</button></div><p class="login-note"></p></div></div>
 
     <footer><div class="footer-logo">Bridge<span>finity</span></div><p>Connecting people. Creating impact.</p><p class="copyright">© 2026 Bridgefinity.</p></footer>
+
     <script src="script.js"></script>
 </body>
 </html>
