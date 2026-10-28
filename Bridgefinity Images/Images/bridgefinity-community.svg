@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">People connecting across a bridge</title>
+  <desc id="desc">A warm illustration of volunteers meeting beside a green bridge.</desc>
+  <rect width="640" height="420" rx="32" fill="#e7f0e9"/>
+  <circle cx="520" cy="94" r="48" fill="#f4a261" opacity=".8"/>
+  <path d="M74 292c82-62 146-76 228-48 77 26 136 19 264-45v93H74z" fill="#b8d8c2"/>
+  <path d="M40 314h560" stroke="#087f73" stroke-width="18" stroke-linecap="round"/>
+  <path d="M116 314c14-92 70-138 140-138s126 46 140 138M344 314c14-92 70-138 140-138s126 46 140 138" fill="none" stroke="#087f73" stroke-width="12"/>
+  <path d="M84 314v44M556 314v44" stroke="#155e63" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="184" cy="142" r="24" fill="#e76f51"/>
+  <path d="M184 170v70m-32-30 32 18 32-18m-22 30 26 54m-36-54-27 54" fill="none" stroke="#155e63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="430" cy="142" r="24" fill="#f4a261"/>
+  <path d="M430 170v70m-32-30 32 18 32-18m-22 30 26 54m-36-54-27 54" fill="none" stroke="#155e63" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M246 86h148M282 58h76" stroke="#e76f51" stroke-width="10" stroke-linecap="round"/>
+</svg>

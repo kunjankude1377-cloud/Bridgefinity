@@ -160,6 +160,54 @@
                     </div>
                 </article>
 
+                <article class="profile-card" id="followedOrganisations">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">FOLLOWING</p>
+                            <h2>Organisations You Follow</h2>
+                        </div>
+                    </div>
+                    <ul class="mini-stat-list" data-followed-ngos-list>
+                        <li>No organisations followed yet.</li>
+                    </ul>
+                </article>
+
+                <article class="profile-card" id="notificationsCard">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">NOTIFICATIONS</p>
+                            <h2>Updates</h2>
+                        </div>
+                    </div>
+                    <ul class="notification-list" data-notification-list>
+                        <li class="notification-empty">No notifications yet.</li>
+                    </ul>
+                </article>
+
+                <article class="profile-card" id="myApplicationsCard">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">MY APPLICATIONS</p>
+                            <h2>Volunteer applications</h2>
+                        </div>
+                    </div>
+                    <ul class="mini-stat-list" data-my-applications-list>
+                        <li>No applications submitted yet.</li>
+                    </ul>
+                </article>
+
+                <article class="profile-card" id="ngoApplicationsCard">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">APPLICATIONS</p>
+                            <h2>Volunteer submissions</h2>
+                        </div>
+                    </div>
+                    <ul class="mini-stat-list" data-ngo-applications-list>
+                        <li>No volunteer applications yet.</li>
+                    </ul>
+                </article>
+
                 <article class="profile-card profile-form-card" id="edit-profile">
                     <div class="card-header">
                         <div>
@@ -168,51 +216,75 @@
                         </div>
                     </div>
 
-                    <form class="profile-form" id="profileForm">
+                    <form class="profile-form" id="profileForm"></form>
+                </article>
+
+                <article class="profile-card ngo-opportunity-card" id="ngoOpportunityManager">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">NGO OPPORTUNITIES</p>
+                            <h2>Create an opportunity</h2>
+                        </div>
+                    </div>
+
+                    <form class="profile-form" id="ngoOpportunityForm">
                         <div class="profile-form-grid">
                             <label>
-                                <span>Full Name</span>
-                                <input type="text" name="name" value="Aanya Sharma" required>
+                                <span>Opportunity Title</span>
+                                <input type="text" name="title" placeholder="Community clean-up drive" required>
                             </label>
                             <label>
-                                <span>Email</span>
-                                <input type="email" name="email" value="aanya@example.com" required>
+                                <span>Category</span>
+                                <select name="category">
+                                    <option>Environment</option>
+                                    <option>Education</option>
+                                    <option>Health & Social Care</option>
+                                    <option>Charity & Donation Drives</option>
+                                    <option>Community</option>
+                                    <option>Animal Welfare</option>
+                                    <option>Other</option>
+                                </select>
                             </label>
                             <label>
-                                <span>City / Location</span>
-                                <input type="text" name="location" value="Nagpur, Maharashtra" required>
+                                <span>Location</span>
+                                <input type="text" name="location" placeholder="Nagpur" required>
                             </label>
                             <label>
-                                <span>Areas of Interest</span>
-                                <input type="text" name="interests" value="Environment, Education, Community" required>
+                                <span>Date</span>
+                                <input type="date" name="date" required>
+                            </label>
+                            <label>
+                                <span>Time</span>
+                                <input type="text" name="time" placeholder="9:00 AM - 1:00 PM" required>
+                            </label>
+                            <label>
+                                <span>Duration</span>
+                                <input type="text" name="duration" value="3-4 hours" required>
+                            </label>
+                            <label>
+                                <span>Volunteers Needed</span>
+                                <input type="number" name="volunteersNeeded" min="1" value="10" required>
                             </label>
                             <label class="full-width">
-                                <span>Skills / Interests</span>
-                                <textarea name="skills" rows="3" required>Event support, teaching assistance, community outreach</textarea>
-                            </label>
-                            <label class="full-width">
-                                <span>Availability</span>
-                                <input type="text" name="availability" value="Weekends · 9:00 AM - 1:00 PM" required>
-                            </label>
-                            <label>
-                                <span>Preferred location</span>
-                                <input type="text" name="prefLocation" value="Nagpur, Wardha Road" required>
-                            </label>
-                            <label>
-                                <span>Preferred cause</span>
-                                <input type="text" name="prefCause" value="Environment and Education" required>
-                            </label>
-                            <label>
-                                <span>Preferred days</span>
-                                <input type="text" name="prefDays" value="Saturday, Sunday" required>
-                            </label>
-                            <label>
-                                <span>Preferred time</span>
-                                <input type="text" name="prefTime" value="Morning" required>
+                                <span>Description</span>
+                                <textarea name="description" rows="3" placeholder="Describe the opportunity, tasks and what volunteers should bring." required></textarea>
                             </label>
                         </div>
-                        <button type="submit" class="primary-btn form-submit">Save Changes</button>
+                        <div class="form-error" id="ngoOpportunityError" aria-live="polite"></div>
+                        <button type="submit" class="primary-btn form-submit">Create Opportunity</button>
                     </form>
+                </article>
+
+                <article class="profile-card" id="ngoOpportunityDashboard">
+                    <div class="card-header">
+                        <div>
+                            <p class="small-heading card-kicker">NGO DASHBOARD</p>
+                            <h2>Your opportunities</h2>
+                        </div>
+                    </div>
+                    <ul class="mini-stat-list" data-ngo-opportunity-list>
+                        <li>NGO opportunities will appear here.</li>
+                    </ul>
                 </article>
             </div>
         </section>
@@ -237,6 +309,10 @@
 
     <footer><div class="footer-logo">Bridge<span>finity</span></div><p>Connecting people. Creating impact.</p><p class="copyright">© 2026 Bridgefinity.</p></footer>
 
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
